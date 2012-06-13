@@ -284,6 +284,7 @@ sub string
         my @list = ( $sort{$key}, [] );
         my $key = shift @{ $list[0] };
         my ( $count, $size );
+        my $null = shift @{ $list[0] } unless @{ $list[0][0] };
 
         while ( ( $count = @{ $list[0] } ) > 1 )
         {
@@ -295,7 +296,7 @@ sub string
         }
 
         @list = map { [ map { ref $_ ? $_->string( %symbol ) : $_ } @$_ ] }
-            @{ $list[0] };
+            $null || (), @{ $list[0] };
 
         for my $list ( @list )
         {
