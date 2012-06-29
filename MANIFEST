@@ -2,7 +2,6 @@ Changes
 MANIFEST
 Makefile.PL
 README
-lib/DynGig/Range/CLI/String.pm
 lib/DynGig/Range/Integer/Object.pm
 lib/DynGig/Range/Integer/Parse.pm
 lib/DynGig/Range/Integer.pm

@@ -7,10 +7,10 @@ package DynGig::Range;
 
 =head1 VERSION
 
-Version 0.01
+Version 1.00
 
 =cut
-our $VERSION = '0.02';
+our $VERSION = '1.00';
 
 =head1 MODULES
 
@@ -21,10 +21,6 @@ Integer set arithmetics.
 =head2 DynGig::Range::String 
 
 Set arithemtics.
-
-=head2 DynGig::Range::CLI::String
-
-CLI for DynGig::Range::String - expand/digest/count
 
 =head2 DynGig::Range::Integer::Object 
 
